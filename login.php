@@ -20,11 +20,10 @@ $password = "00012345";
 
 // todo: why doesn't it work?
 if (!isset($_POST['e-mail'])) {
-    die('Forgot anything?');
+    var_dump($_POST);
 }
-
 // todo: why do multiple passwords work?
-if ($_POST['email'] != $email && $_POST['password'] != $password) {
+if ($_POST['e-mail'] != $email && $_POST['password'] !== $password) {
     die('Invalid credentials');
 }
 
