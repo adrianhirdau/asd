@@ -40,10 +40,13 @@ if (session_status() === PHP_SESSION_NONE) {
             <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
         </form>
     <?php } else { ?>
-        <h1 class="h3 mb-3 font-weight-bold">Welcome!</h1>
-        <form action="login.php" method="post">
+        
+        <form class="form-signin"action="login.php" method="post">
+        	<h1 class="h3 mb-3 font-weight-bold text-center">Welcome!</h1>
             <input type="hidden" value="logout" name="logout">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Logout</button>
+            	<button class="btn btn-primary btn-block text-center" type="submit" id="adc">Logout</button>
+
+            
         </form>
     <?php } ?>
 </body>
