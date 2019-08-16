@@ -19,7 +19,7 @@ $email = "admin@gmail.com";
 $password = "00012345";
 
 // todo: why doesn't it work?
-if (!in_array('e-mail', $_POST)) {
+if (!isset($_POST['e-mail'])) {
     die('Forgot anything?');
 }
 
